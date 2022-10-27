@@ -109,6 +109,21 @@ def s14():
     print("A. Je pakt essentiële spullen in") # 1
     print("B. Je pakt spullen in met emotionele waarde") # 2
 
+# (1)[Stukje 2]
+def s2():
+    print("Uit welke tas et spullen kies je? ")
+    
+    print("A. De rugzak bevat: Geld, je paspoort, een waterfes en een aantal mueslirepen") # 3
+    print("B. De rugzak bevat: Geld, je paspoort, een paar pakjes sap en de overgebleven aardappelen van vorige avond") # 4
+
+# (2)[Stukje 3]
+def s3():
+    print("Uit welke tas met spullen kies je?")
+    
+    print("A. De rugzak bevat: Geld, je paspoort, een teddy beer en een boek") # 21
+    print("B. De rugzal bevat: Geld, je paspoort, de handgemaakte deken van je huisbaas en een foto album") # 22
+
+# (3, 4)[Stukje 4]
 
 
 # def ending 1
