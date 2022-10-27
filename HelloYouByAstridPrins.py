@@ -26,7 +26,42 @@ def start():
     print("Wees voorzichtig en God bless you all")
     
 # (28, 30, 33, 34b, 45)[Stukje 1]
-def s1():
+def s1a():
+        
+    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
+        
+    print("A. Je gaat spullen in een rugzak pakken") # 24
+    print("B. Je raakt in paniek en rent de deur uit") # 25
+
+def s1b():
+        
+    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
+        
+    print("A. Je gaat spullen in een rugzak pakken") # 24
+    print("B. Je raakt in paniek en rent de deur uit") # 25   
+
+def s1c():
+        
+    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
+        
+    print("A. Je gaat spullen in een rugzak pakken") # 24
+    print("B. Je raakt in paniek en rent de deur uit") # 25
+
+def s1d():
+        
+    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
+        
+    print("A. Je gaat spullen in een rugzak pakken") # 24
+    print("B. Je raakt in paniek en rent de deur uit") # 25
+
+def s1e():
+        
+    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
+        
+    print("A. Je gaat spullen in een rugzak pakken") # 24
+    print("B. Je raakt in paniek en rent de deur uit") # 25
+
+def s1f():
         
     print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
         
@@ -75,7 +110,7 @@ def s19():
    
     print("Je besluit te blijven.")
    
-    print("Een dag gaat voorbij, de radio zegt dat de Russen een dag of twee van de stad verwijdert zijn.")
+    print("Een dag gaat voorbij, de radio zegt dat de Russen een dag of twee van de stad verwijderd zijn.")
    
     print("Het is je laatste kans om te vluchten ")
    
@@ -343,13 +378,14 @@ elif volgverhaal == "n" or volgverhaal == "nee":
 
 def sa1():
     sa1 = input("A of B ").lower()
+
 # Begin verhaal
 if volgverhaal == "j" or volgverhaal == "ja":
     start()
-    s1()
-sa1a = input("A of B ").lower
+    s1a()
+sa1a = input("A of B ").lower()
 
-
+# sa1a
 if sa1a == "a":
     s14()
 elif sa1a == "b":
@@ -357,6 +393,7 @@ elif sa1a == "b":
 sa14 = input("A of B ").lower()
 sa15 = input("A of B").lower()
 
+# sa15
 if sa15 == "a":
     s16()
 elif sa15 == "b":
@@ -364,6 +401,7 @@ elif sa15 == "b":
 sa16 = input("A of B ").lower()   
 sa17 = input("A of B ").lower()
 
+# sa14
 if sa14 == "a":
     s2()
 elif sa14 == "b":
@@ -371,13 +409,53 @@ elif sa14 == "b":
 sa2 = input("A of B ").lower()
 sa3 = input("A of B ").lower()
 
+# sa16
 if sa16 == "a":
-    s1()
+    s1b()
 elif sa16 == "b":
     s20()
-sa1b = input("A of B ").lower
+sa1b = input("A of B ").lower()
 sa20 = input("A of B ").lower()
 
+# sa17
+if sa17 == "a":
+    s1e()
+elif sa17 == "b":
+    s19()
+sa1e = input("A of B ").lower()
+sa19 = input("A of B ").lower()
 
+# sa1b
+if sa1b == "a":
+    s14()
+elif sa1b == "b": 
+    s15()
+sa14 = input("A of B ").lower()
+sa15 = input("A of B").lower()
+
+# sa20
+if sa20 == "a":
+    s18()
+    s1d()
+elif sa20 == "b":
+    s1c()
+sa1d = input("A of B ").lower()
+sa1c = input("A of B ").lower()
+
+# sa1c 
+if sa1c == "a":
+    s14()
+elif sa1c == "b":
+    s15()
+sa14 = input("A of B ").lower()
+sa15 = input("A of B ").lower()
+
+# sa1d
+if sa1d == "a":
+    s14()
+elif sa1d == "b":
+    s15()
+sa14 = input("A of B ").lower()
+sa15 = input("A of B ").lower()
 
 
