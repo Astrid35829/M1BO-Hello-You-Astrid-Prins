@@ -1,30 +1,49 @@
+from time import sleep
 
+# def intro
+def intro():
+    print("Welkom bij de Module 1 opdracht Hello You van de opleiding Software Developer aan het Mediacollege Amsterdam")
+
+    print("De opdracht was om een textbased applicatie te maken met Python.")
+
+    print("Dit moest doormiddel van een zelfverzonnen verhaal of een verhaal gebaseerd op waargebeurde verhalen.")
+
+    print("In deze opdracht is er een verhaal gemaakt die gebaseerd is op ervaringen van vluchtelingen uit Oekraïne.")
+
+    print("Wilt u het verhaal volgen?")
+    volgverhaal = input("Voer in j of n ").lower()
+
+    #continue
+    if volgverhaal == "j" or volgverhaal == "ja":
+        print("Hier volgt her verhaal")
+    elif volgverhaal == "n" or volgverhaal == "nee":
+        print("Bedankt voor uw aandacht, tot ziens!")
+    
+    # Begin verhaal
+    if volgverhaal == "j" or volgverhaal == "ja":
+        start()
+        
 # def Start
 def start():
     
     print("Je bent een student aan de Universiteit van Charkov in Oekraïne waar je Computer Science studeert. ")
 
-    
     print("Je woont bij een oudere vrouw in huis waar je een hechte band mee hebt geschept.")
-    
     
     print("Eerder in de week was op het nieuws al te horen dat de Russen Oekraïne waren binnen gevallen, je besloot om in de stad te blijven tot het niet meer kan. ")
     
-    
     print("Tijdens het studeren achter je computer in je kamer gaan het luchtalarm af en de radio switcht naar het noodbericht: ")
-    
     
     print("Rusland heeft de aanval gericht op de stad, de troepen zijn een paar dagen verwijdert van de stad.")
     
-    
     print("Ga naar de schuilkelder of pak de laatste kans om te vluchten. ")
-    
     
     print("Moldavië, Hongarije, Roemenië en Polen hebben hun grenzen open gezet voor vluchtelingen. ")
     
-    
     print("Wees voorzichtig en God bless you all")
-    
+
+    s1a()
+
 # (28, 30, 33, 34b, 45)[Stukje 1]
 def s1a():
         
@@ -33,40 +52,12 @@ def s1a():
     print("A. Je gaat spullen in een rugzak pakken") # 24
     print("B. Je raakt in paniek en rent de deur uit") # 25
 
-def s1b():
-        
-    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
-        
-    print("A. Je gaat spullen in een rugzak pakken") # 24
-    print("B. Je raakt in paniek en rent de deur uit") # 25   
+    answer = input("A of B ").lower()
 
-def s1c():
-        
-    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
-        
-    print("A. Je gaat spullen in een rugzak pakken") # 24
-    print("B. Je raakt in paniek en rent de deur uit") # 25
-
-def s1d():
-        
-    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
-        
-    print("A. Je gaat spullen in een rugzak pakken") # 24
-    print("B. Je raakt in paniek en rent de deur uit") # 25
-
-def s1e():
-        
-    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
-        
-    print("A. Je gaat spullen in een rugzak pakken") # 24
-    print("B. Je raakt in paniek en rent de deur uit") # 25
-
-def s1f():
-        
-    print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
-        
-    print("A. Je gaat spullen in een rugzak pakken") # 24
-    print("B. Je raakt in paniek en rent de deur uit") # 25
+    if answer == "a":
+        s14()
+    elif answer == "b":
+        s15()
 
 # (25)[Stukje 15]
 def s15():
@@ -75,6 +66,14 @@ def s15():
     
     print("A. Je gaat links naar de trein ") # 26
     print("B. Je gaat rechts naar de schuilkelder ") # 25
+
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s16()
+    elif answer == "b":
+        s17()
+
 
 # (26) [Stukje 16]
 def s16():
@@ -87,6 +86,13 @@ def s16():
     
     print("A. Je gaat terug naar je kamer") # 28
     print("B. Je gaat verder naar het treinstation ") # 29
+    
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s1a()
+    elif answer == "b":
+        s20()
 
 # (27)[Stukje 17]
 def s17():
@@ -98,12 +104,22 @@ def s17():
     print("A. Je gaat terug naar je kamer ") # 30
     print("B. Je blijft in de schuilkelder ") # 31
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s1a()
+    elif answer == "b":
+        s19()
+
+
 # (34a)[Stukje 18]
 def s18():
     
     print("Je komt aan bij het treinstation, maar je hebt geen geld voor een kaartje. ")
     
     print("Je besluit weer terug te gaan naar je kamer ") # 34b
+
+    s1a()
 
 # (31)[Stukje 19]
 def s19():
@@ -119,6 +135,14 @@ def s19():
     print("A. Je blijft nog langer") # 32
     print("B. Je gaat terug naar je kamer")
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        ending1()
+    elif answer == "b":
+        s1a()
+
+
 # (29)[Stukje 20]
 def s20():
     
@@ -133,6 +157,14 @@ def s20():
     print("A. Je gaat verder naar het trein station") # 34
     print("B. Je gaat terug naar je kamer") # 35
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s18()
+    elif answer == "b":
+        s1a()
+
+
 # (24)[Stukje 14]
 def s14():
     
@@ -143,18 +175,27 @@ def s14():
     print("A. Je pakt essentiële spullen in") # 1
     print("B. Je pakt spullen in met emotionele waarde") # 2
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s2a()
+    elif answer == "b":
+        s3a()
+
+
 # (1)[Stukje 2]
 def s2a():
-    print("Uit welke tas et spullen kies je? ")
+    print("Uit welke tas met spullen kies je? ")
     
     print("A. De rugzak bevat: Geld, je paspoort, een waterfes en een aantal mueslirepen") # 3
     print("B. De rugzak bevat: Geld, je paspoort, een paar pakjes sap en de overgebleven aardappelen van vorige avond") # 4
 
-def s2b():
-    print("Uit welke tas et spullen kies je? ")
-    
-    print("A. De rugzak bevat: Geld, je paspoort, een waterfes en een aantal mueslirepen") # 3
-    print("B. De rugzak bevat: Geld, je paspoort, een paar pakjes sap en de overgebleven aardappelen van vorige avond")
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s4()
+    elif answer == "b":
+        s3a()
 
 # (2)[Stukje 3]
 def s3a():
@@ -163,11 +204,12 @@ def s3a():
     print("A. De rugzak bevat: Geld, je paspoort, een teddy beer en een boek") # 21
     print("B. De rugzal bevat: Geld, je paspoort, de handgemaakte deken van je huisbaas en een foto album") # 22
 
-def s3b():
-    print("Uit welke tas met spullen kies je?")
-    
-    print("A. De rugzak bevat: Geld, je paspoort, een teddy beer en een boek") # 21
-    print("B. De rugzal bevat: Geld, je paspoort, de handgemaakte deken van je huisbaas en een foto album") # 22
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s5()
+    elif answer == "b":
+        s3a()
 
 # (3, 4)[Stukje 4]
 def s4():
@@ -176,12 +218,27 @@ def s4():
     print("A. Bevestig") # 23
     print("B. Cancel") # 1
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s6()
+    elif answer == "b":
+        s2a()
+
 # (21, 22)[Stukje 5]
 def s5():
     print("Bevestig je keuze.")
 
     print("A. Bevestig") # 23
     print("B. Cancel") # 2
+
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s6()
+    elif answer == "b":
+        s3a()
+
 
 # (23)[Stukje 6]
 def s6():
@@ -191,6 +248,13 @@ def s6():
 
     print("A. Je besluit dat je met je huisbaas en de buren in de auto naar de grens van Polen gaat") # 5
     print("B. Je besluit om alleen te gaan reizen") # 6
+    
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s7()
+    elif answer == "b":
+        s8()
 
 # (5)[Stukje 7]
 def s7():
@@ -201,6 +265,14 @@ def s7():
     print("A. Je blijft bij je huisbaas die naar familie gaat in Polen") # 9
     print("B. Je gaat met de buren mee naar Nederland") # 10
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        ending1()
+    elif answer == "b":
+        s9()
+
+
 # (6)[Stukje 8]
 def s8():
     print("Je hebt besloten om alleen te gaan.")
@@ -209,12 +281,27 @@ def s8():
     print("A. Je gaat naar de boederij van een kennis van je huisbaas") # 7
     print("B. Je gaat naar de dichtsbijzijnde publieke schuilkelder") # 8
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s10()
+    elif answer == "b":
+        s11()
+
 # (10)[Stukje 9]
 def s9():
     print("Je bereikt Nederland met je buren, je kan twee dingen doen.")
 
     print("A. Je krijgt een vluchtelingen verblijfvergunning en blijft bij je buren") # 11
     print("B. Je gaat naar een vluchtelingenverblijf en wacht op een verblijfvergunning") # 12
+
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        ending2()
+    elif answer == "b":
+        ending3()
+
 
 # (7)[Stukje 10]
 def s10():
@@ -224,6 +311,14 @@ def s10():
     print("A. Je blijft op de boerderij") # 19
     print("B. Je besluit om naar de grens te gaan") # 20
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        ending4()
+    elif answer == "b":
+        s20()
+
+
 # (8)[Stukje 11]
 def s11():
     print("Je verblijft een tijdje in de schuilkelder, maar uiteindelijk raakt je eten op en de Russen komen dichterbij de stad.")
@@ -232,12 +327,28 @@ def s11():
     print("A. Je blijft in de schuilkelder") # 13
     print("B. Je vlucht de stad uit") # 14
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        ending5()
+    elif answer == "b":
+        s13()
+
+
 # (20)[Stukje 21]
 def s21():
     print("Hoe ga je naar de grens?")
 
     print("A. Je lift mee met wat vrienden an de boer waar je verbleef") # 36
     print("B. Je gaat met de trein") # 37
+
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        s12()
+    elif answer == "b":
+        s12()
+
 
 # (16, 36, 37)[Stukje 12]
 def s12():
@@ -247,6 +358,14 @@ def s12():
     print("A. Je gaat naar Nederland") # 17
     print("B. Je gaat zoeken naar je huisbaas in Polen") # 18
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        ending3()
+    elif answer == "b":
+        ending1()
+
+
 # (14)[Stukje 13]
 def s13():
     print("Je besluit om de stad te ontvluchten.")
@@ -255,9 +374,14 @@ def s13():
     print("A. Je gaat naar het platteland, waar je een familie op een boederij vindt die je wilt opnemen") # 15
     print("B. Je gaat naar de Poolse grens") # 16
 
+    answer = input("A of B ").lower()
+
+    if answer == "a":
+        ending4()
+    elif answer == "b":
+        s12()
 
 # def ending 1
-
 def ending1():
     
     print("Je gaat met huisbaas mee naar haar familie, ze hebben ene kamer voor je vrij. ")
@@ -274,7 +398,6 @@ def ending1():
     print("Bedankt voor het spelen! Tot ziens! :D ")
 
 # def ending 2
-
 def ending2():
     
     print("Je besluit om bij de buren te blijven, je krijgt een vluchtelingen verblijfvergunning.")
@@ -291,7 +414,6 @@ def ending2():
     print("Bedankt voor het spelen! Tot ziens! :D ")
 
 # def ending 3
-
 def ending3():
     
     print("Je belandt op het vluchtelingen cruiseschip in Zaandam. ")
@@ -310,7 +432,6 @@ def ending3():
     print("Bedankt voor het spelen! Tot ziens! :D ")
 
 # def ending 4
-
 def ending4():
     
     print("Je blijft op de boerderij, je werkt daar voor onderdak en eten.")
@@ -327,7 +448,6 @@ def ending4():
     print("Bedankt voor het spelen! Tot ziens! :D ")
 
 # def ending 5
-
 def ending5():
     
     print("Je besluit om in de schuilkelder te blijven tot het Russisch leger de stad heeft overgenomen en de bommen stoppen met vallen.")
@@ -348,7 +468,6 @@ def ending5():
     print("Bedankt voor het spelen! Tot ziens! :D ")
 
 # def ending 6
-
 def ending6():
     
     print("Je gaat naar buiten en loopt richting je kamer.")
@@ -368,156 +487,4 @@ def ending6():
 # BEGIN APPLICATIE
 
 # Introduction
-
-print("Welkom bij de Module 1 opdracht Hello You van de opleiding Software Developer aan het Mediacollege Amsterdam")
-
-print("De opdracht was om een textbased applicatie te maken met Python.")
-
-print("Dit moest doormiddel van een zelfverzonnen verhaal of een verhaal gebaseerd op waargebeurde verhalen.")
-
-print("In deze opdracht is er een verhaal gemaakt die gebaseerd is op ervaringen van vluchtelingen uit Oekraïne.")
-
-print("Wilt u het verhaal volgen?")
-volgverhaal = input("Voer in j of n ").lower()
-
-#continue
-if volgverhaal == "j" or volgverhaal == "ja":
-    
-    print("Hier volgt her verhaal")
-elif volgverhaal == "n" or volgverhaal == "nee":
-    
-    print("Bedankt voor uw aandacht, tot ziens!")
-
-def sa1():
-    sa1 = input("A of B ").lower()
-
-# Begin verhaal
-if volgverhaal == "j" or volgverhaal == "ja":
-    start()
-    s1a()
-sa1a = input("A of B ").lower()
-
-# Panic path
-
-# sa1a
-if sa1a == "a":
-    s14()
-elif sa1a == "b":
-    s15()
-sa14 = input("A of B ").lower()
-sa15 = input("A of B ").lower()
-
-# sa15
-if sa15 == "a":
-    s16()
-elif sa15 == "b":
-    s17()
-sa16 = input("A of B ").lower()   
-sa17 = input("A of B ").lower()
-
-# sa16
-if sa16 == "a":
-    s1b()
-elif sa16 == "b":
-    s20()
-sa1b = input("A of B ").lower()
-sa20 = input("A of B ").lower()
-
-# sa1b
-if sa1b == "a":
-    s14()
-elif sa1b == "b": 
-    s15()
-sa14 = input("A of B ").lower()
-sa15 = input("A of B").lower()
-
-# sa14
-if sa14 == "a":
-    s2a()
-elif sa14 == "b":
-    s3a()
-sa2a = input("A of B ").lower()
-sa3a = input("A of B ").lower()
-
-# sa17
-if sa17 == "a":
-    s1e()
-elif sa17 == "b":
-    s19()
-sa1e = input("A of B ").lower()
-sa19 = input("A of B ").lower()
-
-# sa20
-if sa20 == "a":
-    s18()
-elif sa20 == "b":
-    s1c()
-
-sa1c = input("A of B ").lower()
-
-if sa20 == "a":
-    s1d()
-sa1d = input("A of B ").lower()
-
-# sa1c 
-if sa1c == "a":
-    s14()
-elif sa1c == "b":
-    s15()
-sa14 = input("A of B ").lower()
-sa15 = input("A of B ").lower()
-
-# sa1d
-if sa1d == "a":
-    s14()
-elif sa1d == "b":
-    s15()
-sa14 = input("A of B ").lower()
-sa15 = input("A of B ").lower()
-
-# sa1e
-if sa1e == "a":
-    s14()
-elif sa1e == "b":
-    s15()
-sa14 = input("A of B ").lower()
-sa15 = input("A of B ").lower()
-
-# sa19
-if sa19 == "a":
-    ending1()
-elif sa19 == "b":
-    s1f()
-sa1f = input("A of B ").lower()
-
-# sa1f
-if sa1f == "a":
-    s14()
-elif sa1f == "b":
-    s15()
-sa14 = input("A of B ").lower()
-sa15 = input("A of B ").lower()
-
-# packing path
-
-# sa2a
-if sa2a == "a":
-    s4()
-elif sa2a == "b":
-    s3b()
-sa4 = input("A of B ").lower()
-sa3b = input("A of B ").lower()
-
-# sa4
-if sa4 == "a":
-    s6()
-elif sa4 == "b":
-    s2b()
-sa6 = input("A of B ").lower()
-sa2b = input("A of B ").lower()
-
-# sa3b
-if sa3b == "a":
-    s5()
-elif sa3b == "b":
-    s2a()
+intro()
