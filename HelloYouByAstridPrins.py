@@ -1,10 +1,9 @@
 
 # def Start
-
 def start():
     
     print("Je bent een student aan de Universiteit van Charkov in Oekraïne waar je Computer Science studeert. ")
-    
+
     
     print("Je woont bij een oudere vrouw in huis waar je een hechte band mee hebt geschept.")
     
@@ -39,7 +38,7 @@ def s15():
     
     print("Je komt de deur uit. Welke kant ga je op?")
     
-    print("A. Je gaat llinks naar de trein ") # 26
+    print("A. Je gaat links naar de trein ") # 26
     print("B. Je gaat rechts naar de schuilkelder ") # 25
 
 # (26) [Stukje 16]
@@ -124,6 +123,90 @@ def s3():
     print("B. De rugzal bevat: Geld, je paspoort, de handgemaakte deken van je huisbaas en een foto album") # 22
 
 # (3, 4)[Stukje 4]
+def s4():
+    print("Bevestig je keuze.")
+
+    print("A. Bevestig") # 23
+    print("B. Cancel") # 1
+
+# (21, 22)[Stukje 5]
+def s5():
+    print("Bevestig je keuze.")
+
+    print("A. Bevestig") # 23
+    print("B. Cancel") # 2
+
+# (23)[Stukje 6]
+def s6():
+    print("Tijdens het inpakken komt je huisbaas je kamer binnen.")
+    print("Ze verteld dat ze samen met de buren naar Polen gaat rijden en dat er nog een plekje voor jou is als je mee wilt.")
+    print("Wat doe je?")
+
+    print("A. Je besluit dat je met je huisbaas en de buren in de auto naar de grens van Polen gaat") # 5
+    print("B. Je besluit om alleen te gaan reizen") # 6
+
+# (5)[Stukje 7]
+def s7():
+    print("Het is druk op de weg, massa's mensen verplaatsen zich.")
+    print("Maar uiteindelijk komt jullie auto aan bij de grens.")
+    print("Daar krijg je informatie over mogelijke opties, je maakt samen met je gezelschap een besluit.")
+
+    print("A. Je blijft bij je huisbaas die naar familie gaat in Polen") # 9
+    print("B. Je gaat met de buren mee naar Nederland") # 10
+
+# (6)[Stukje 8]
+def s8():
+    print("Je hebt besloten om alleen te gaan.")
+    print("Wat ga je doen?")
+
+    print("A. Je gaat naar de boederij van een kennis van je huisbaas") # 7
+    print("B. Je gaat naar de dichtsbijzijnde publieke schuilkelder") # 8
+
+# (10)[Stukje 9]
+def s9():
+    print("Je bereikt Nederland met je buren, je kan twee dingen doen.")
+
+    print("A. Je krijgt een vluchtelingen verblijfvergunning en blijft bij je buren") # 11
+    print("B. Je gaat naar een vluchtelingenverblijf en wacht op een verblijfvergunning") # 12
+
+# (7)[Stukje 10]
+def s10():
+    print("Je bent op de boerderij aangekomen en er is wat tijd voorbij gegaan. ")
+    print("Je hebt 2 opties.")
+
+    print("A. Je blijft op de boerderij") # 19
+    print("B. Je besluit om naar de grens te gaan") # 20
+
+# (8)[Stukje 11]
+def s11():
+    print("Je verblijft een tijdje in de schuilkelder, maar uiteindelijk raakt je eten op en de Russen komen dichterbij de stad.")
+    print("Wat doe je?")
+
+    print("A. Je blijft in de schuilkelder") # 13
+    print("B. Je vlucht de stad uit") # 14
+
+# (20)[Stukje 21]
+def s21():
+    print("Hoe ga je naar de grens?")
+
+    print("A. Je lift mee met wat vrienden an de boer waar je verbleef") # 36
+    print("B. Je gaat met de trein") # 37
+
+# (16, 36, 37)[Stukje 12]
+def s12():
+    print("Je komt aan bij de grens van Polen.")
+    print("Wat ga je doen?")
+
+    print("A. Je gaat naar Nederland") # 17
+    print("B. Je gaat zoeken naar je huisbaas in Polen") # 18
+
+# (14)[Stukje 13]
+def s13():
+    print("Je besluit om de stad te ontvluchten.")
+    print(" Waar ga je heen?")
+
+    print("A. Je gaat naar het platteland, waar je een familie op een boederij vindt die je wilt opnemen") # 15
+    print("B. Je gaat naar de Poolse grens") # 16
 
 
 # def ending 1
@@ -241,15 +324,11 @@ def ending6():
 
 print("Welkom bij de Module 1 opdracht Hello You van de opleiding Software Developer aan het Mediacollege Amsterdam")
 
-
 print("De opdracht was om een textbased applicatie te maken met Python.")
-
 
 print("Dit moest doormiddel van een zelfverzonnen verhaal of een verhaal gebaseerd op waargebeurde verhalen.")
 
-
 print("In deze opdracht is er een verhaal gemaakt die gebaseerd is op ervaringen van vluchtelingen uit Oekraïne.")
-
 
 print("Wilt u het verhaal volgen?")
 volgverhaal = input("Voer in j of n ").lower()
@@ -262,15 +341,43 @@ elif volgverhaal == "n" or volgverhaal == "nee":
     
     print("Bedankt voor uw aandacht, tot ziens!")
 
+def sa1():
+    sa1 = input("A of B ").lower()
 # Begin verhaal
 if volgverhaal == "j" or volgverhaal == "ja":
     start()
     s1()
-    s1a = input("A of B ").lower()
+sa1a = input("A of B ").lower
 
-if s1a == "a":
+
+if sa1a == "a":
     s14()
-    sa14 = input("A of B ").lower()
-elif s1a == "b":
+elif sa1a == "b":
     s15()
-    sa15 = input("A of B").lower()
+sa14 = input("A of B ").lower()
+sa15 = input("A of B").lower()
+
+if sa15 == "a":
+    s16()
+elif sa15 == "b":
+    s17()
+sa16 = input("A of B ").lower()   
+sa17 = input("A of B ").lower()
+
+if sa14 == "a":
+    s2()
+elif sa14 == "b":
+    s3()
+sa2 = input("A of B ").lower()
+sa3 = input("A of B ").lower()
+
+if sa16 == "a":
+    s1()
+elif sa16 == "b":
+    s20()
+sa1b = input("A of B ").lower
+sa20 = input("A of B ").lower()
+
+
+
+
