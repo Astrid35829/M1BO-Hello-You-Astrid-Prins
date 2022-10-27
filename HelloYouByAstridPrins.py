@@ -144,14 +144,26 @@ def s14():
     print("B. Je pakt spullen in met emotionele waarde") # 2
 
 # (1)[Stukje 2]
-def s2():
+def s2a():
     print("Uit welke tas et spullen kies je? ")
     
     print("A. De rugzak bevat: Geld, je paspoort, een waterfes en een aantal mueslirepen") # 3
     print("B. De rugzak bevat: Geld, je paspoort, een paar pakjes sap en de overgebleven aardappelen van vorige avond") # 4
 
+def s2b():
+    print("Uit welke tas et spullen kies je? ")
+    
+    print("A. De rugzak bevat: Geld, je paspoort, een waterfes en een aantal mueslirepen") # 3
+    print("B. De rugzak bevat: Geld, je paspoort, een paar pakjes sap en de overgebleven aardappelen van vorige avond")
+
 # (2)[Stukje 3]
-def s3():
+def s3a():
+    print("Uit welke tas met spullen kies je?")
+    
+    print("A. De rugzak bevat: Geld, je paspoort, een teddy beer en een boek") # 21
+    print("B. De rugzal bevat: Geld, je paspoort, de handgemaakte deken van je huisbaas en een foto album") # 22
+
+def s3b():
     print("Uit welke tas met spullen kies je?")
     
     print("A. De rugzak bevat: Geld, je paspoort, een teddy beer en een boek") # 21
@@ -385,13 +397,15 @@ if volgverhaal == "j" or volgverhaal == "ja":
     s1a()
 sa1a = input("A of B ").lower()
 
+# Panic path
+
 # sa1a
 if sa1a == "a":
     s14()
 elif sa1a == "b":
     s15()
 sa14 = input("A of B ").lower()
-sa15 = input("A of B").lower()
+sa15 = input("A of B ").lower()
 
 # sa15
 if sa15 == "a":
@@ -401,14 +415,6 @@ elif sa15 == "b":
 sa16 = input("A of B ").lower()   
 sa17 = input("A of B ").lower()
 
-# sa14
-if sa14 == "a":
-    s2()
-elif sa14 == "b":
-    s3()
-sa2 = input("A of B ").lower()
-sa3 = input("A of B ").lower()
-
 # sa16
 if sa16 == "a":
     s1b()
@@ -416,14 +422,6 @@ elif sa16 == "b":
     s20()
 sa1b = input("A of B ").lower()
 sa20 = input("A of B ").lower()
-
-# sa17
-if sa17 == "a":
-    s1e()
-elif sa17 == "b":
-    s19()
-sa1e = input("A of B ").lower()
-sa19 = input("A of B ").lower()
 
 # sa1b
 if sa1b == "a":
@@ -433,14 +431,33 @@ elif sa1b == "b":
 sa14 = input("A of B ").lower()
 sa15 = input("A of B").lower()
 
+# sa14
+if sa14 == "a":
+    s2a()
+elif sa14 == "b":
+    s3a()
+sa2a = input("A of B ").lower()
+sa3a = input("A of B ").lower()
+
+# sa17
+if sa17 == "a":
+    s1e()
+elif sa17 == "b":
+    s19()
+sa1e = input("A of B ").lower()
+sa19 = input("A of B ").lower()
+
 # sa20
 if sa20 == "a":
     s18()
-    s1d()
 elif sa20 == "b":
     s1c()
-sa1d = input("A of B ").lower()
+
 sa1c = input("A of B ").lower()
+
+if sa20 == "a":
+    s1d()
+sa1d = input("A of B ").lower()
 
 # sa1c 
 if sa1c == "a":
@@ -458,4 +475,49 @@ elif sa1d == "b":
 sa14 = input("A of B ").lower()
 sa15 = input("A of B ").lower()
 
+# sa1e
+if sa1e == "a":
+    s14()
+elif sa1e == "b":
+    s15()
+sa14 = input("A of B ").lower()
+sa15 = input("A of B ").lower()
 
+# sa19
+if sa19 == "a":
+    ending1()
+elif sa19 == "b":
+    s1f()
+sa1f = input("A of B ").lower()
+
+# sa1f
+if sa1f == "a":
+    s14()
+elif sa1f == "b":
+    s15()
+sa14 = input("A of B ").lower()
+sa15 = input("A of B ").lower()
+
+# packing path
+
+# sa2a
+if sa2a == "a":
+    s4()
+elif sa2a == "b":
+    s3b()
+sa4 = input("A of B ").lower()
+sa3b = input("A of B ").lower()
+
+# sa4
+if sa4 == "a":
+    s6()
+elif sa4 == "b":
+    s2b()
+sa6 = input("A of B ").lower()
+sa2b = input("A of B ").lower()
+
+# sa3b
+if sa3b == "a":
+    s5()
+elif sa3b == "b":
+    s2a()
