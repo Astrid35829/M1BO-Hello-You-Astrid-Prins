@@ -46,7 +46,7 @@ def s16():
    
     print("Tijdens het rennen raak je moe en begin je met lopen." )
    
-    print("Je raapt je gedacthes bij elkaar. ")
+    print("Je raapt je gedachtens bij elkaar. ")
     
     print("Je maakt een beslissing. ")
     
