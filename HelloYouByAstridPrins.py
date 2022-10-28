@@ -58,7 +58,7 @@ def start():
 def room():
     sleep(1)    
     print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
-    sleep(2)
+    sleep(1)
     print("A. Je gaat spullen in een rugzak pakken") # 24
     print("B. Je raakt in paniek en rent de deur uit") # 25
 
@@ -76,7 +76,7 @@ def room():
 def outsidedoor():
     sleep(1)
     print("Je komt de deur uit. Welke kant ga je op?")
-    sleep(2)
+    sleep(1)
     print("A. Je gaat links naar de trein ") # 26
     print("B. Je gaat rechts naar de schuilkelder ") # 25
 
@@ -95,11 +95,11 @@ def outsidedoor():
 def running():
     sleep(1)
     print("Tijdens het rennen raak je moe en begin je met lopen." )
-    sleep(2)
+    sleep(1)
     print("Je raapt je gedachtens bij elkaar. ")
-    sleep(2)
+    sleep(1)
     print("Je maakt een beslissing. ")
-    sleep(2)
+    sleep(1)
     print("A. Je gaat terug naar je kamer") # 28
     print("B. Je gaat verder naar het treinstation ") # 29
     
@@ -117,9 +117,9 @@ def running():
 def bombshelter():
     sleep(1)
     print("Je komt aan bij de schuilkelder en je komt tot rust. ")
-    sleep(2)
+    sleep(1)
     print("Je maakt een beslissing ")
-    sleep(2)
+    sleep()
     print("A. Je gaat terug naar je kamer ") # 30
     print("B. Je blijft in de schuilkelder ") # 31
 
@@ -138,7 +138,7 @@ def bombshelter():
 def noticket():
     sleep(1)
     print("Je komt aan bij het treinstation, maar je hebt geen geld voor een kaartje. ")
-    sleep(2)
+    sleep(1)
     print("Je besluit weer terug te gaan naar je kamer ") # 34b
     
     room()
@@ -147,13 +147,13 @@ def noticket():
 def staybombshelter():
     sleep(1)
     print("Je besluit te blijven.")
-    sleep(2)
+    sleep(1)
     print("Een dag gaat voorbij, de radio zegt dat de Russen een dag of twee van de stad verwijderd zijn.")
-    sleep(2)
+    sleep(1)
     print("Het is je laatste kans om te vluchten ")
-    sleep(2)
+    sleep(1)
     print("Wat ga je doen?")
-    sleep(2)
+    sleep(1)
     print("A. Je blijft nog langer") # 32
     print("B. Je gaat terug naar je kamer")
 
@@ -172,13 +172,13 @@ def staybombshelter():
 def tv():
     sleep(1)
     print("Je komt langs een winkel met tv's in het raam die het nieuws afspelen.")
-    sleep(2)
+    sleep(1)
     print("Je gaat staan luisteren")
-    sleep(2)
+    sleep(1)
     print("Er wordt gezegd om je goed voor te bereiden op je vlucht uit de stad. ")
-    sleep(2)
+    sleep(1)
     print("Wat ga je doen")
-    sleep(2)
+    sleep()
     print("A. Je gaat verder naar het trein station") # 34
     print("B. Je gaat terug naar je kamer") # 35
 
@@ -197,9 +197,9 @@ def tv():
 def pack():
     sleep(1)
     print("Je begint met het pakken van je spullen.")
-    sleep(2)
+    sleep(1)
     print("Wat neem je mee?")
-    sleep(2)
+    sleep(1)
     print("A. Je pakt essentiële spullen in") # 1
     print("B. Je pakt spullen in met emotionele waarde") # 2
 
@@ -217,7 +217,7 @@ def pack():
 def essential():
     sleep(1)
     print("Uit welke tas met spullen kies je? ")
-    sleep(2)
+    sleep(1)
     print("A. De rugzak bevat: Geld, je paspoort, een waterfes en een aantal mueslirepen") # 3
     print("B. De rugzak bevat: Geld, je paspoort, een paar pakjes sap en de overgebleven aardappelen van vorige avond") # 4
 
@@ -235,7 +235,7 @@ def essential():
 def emotional():
     sleep(1)
     print("Uit welke tas met spullen kies je?")
-    sleep(2)
+    sleep(1)
     print("A. De rugzak bevat: Geld, je paspoort, een teddy beer en een boek") # 21
     print("B. De rugzal bevat: Geld, je paspoort, de handgemaakte deken van je huisbaas en een foto album") # 22
 
@@ -253,7 +253,7 @@ def emotional():
 def confirmEs():
     sleep(1)
     print("Bevestig je keuze.")
-    sleep(2)
+    sleep(1)
     print("A. Bevestig") # 23
     print("B. Cancel") # 1
 
@@ -271,7 +271,7 @@ def confirmEs():
 def confirmEm():
     sleep(1)
     print("Bevestig je keuze.")
-    sleep(2)
+    sleep(1)
     print("A. Bevestig") # 23
     print("B. Cancel") # 2
 
@@ -290,11 +290,11 @@ def confirmEm():
 def where():
     sleep(1)
     print("Tijdens het inpakken komt je huisbaas je kamer binnen.")
-    sleep(2)
+    sleep(1)
     print("Ze verteld dat ze samen met de buren naar Polen gaat rijden en dat er nog een plekje voor jou is als je mee wilt.")
-    sleep(2)
+    sleep(1)
     print("Wat doe je?")
-    sleep(2)
+    sleep(1)
     print("A. Je besluit dat je met je huisbaas en de buren in de auto naar de grens van Polen gaat") # 5
     print("B. Je besluit om alleen te gaan reizen") # 6
     
@@ -312,11 +312,11 @@ def where():
 def car():
     sleep(1)
     print("Het is druk op de weg, massa's mensen verplaatsen zich.")
-    sleep(2)
+    sleep(1)
     print("Maar uiteindelijk komt jullie auto aan bij de grens.")
-    sleep(2)
+    sleep(1)
     print("Daar krijg je informatie over mogelijke opties, je maakt samen met je gezelschap een besluit.")
-    sleep(2)
+    sleep(1)
     print("A. Je blijft bij je huisbaas die naar familie gaat in Polen") # 9
     print("B. Je gaat met de buren mee naar Nederland") # 10
 
@@ -335,9 +335,9 @@ def car():
 def alone():
     sleep(1)
     print("Je hebt besloten om alleen te gaan.")
-    sleep(2)
+    sleep(1)
     print("Wat ga je doen?")
-    sleep(2)
+    sleep(1)
     print("A. Je gaat naar de boederij van een kennis van je huisbaas") # 7
     print("B. Je gaat naar de dichtsbijzijnde publieke schuilkelder") # 8
 
@@ -355,7 +355,7 @@ def alone():
 def nl():
     sleep(1)
     print("Je bereikt Nederland met je buren, je kan twee dingen doen.")
-    sleep(2)
+    sleep(1)
     print("A. Je krijgt een vluchtelingen verblijfvergunning en blijft bij je buren") # 11
     print("B. Je gaat naar een vluchtelingenverblijf en wacht op een verblijfvergunning") # 12
 
@@ -374,9 +374,9 @@ def nl():
 def farm():
     sleep(1)
     print("Je bent op de boerderij aangekomen en er is wat tijd voorbij gegaan. ")
-    sleep(2)
+    sleep(1)
     print("Je hebt 2 opties.")
-    sleep(2)
+    sleep(1)
     print("A. Je blijft op de boerderij") # 19
     print("B. Je besluit om naar de grens te gaan") # 20
 
@@ -395,9 +395,9 @@ def farm():
 def nofood():
     sleep(1)
     print("Je verblijft een tijdje in de schuilkelder, maar uiteindelijk raakt je eten op en de Russen komen dichterbij de stad.")
-    sleep(2)
+    sleep(1)
     print("Wat doe je?")
-    sleep(2)
+    sleep(1)
     print("A. Je blijft in de schuilkelder") # 13
     print("B. Je vlucht de stad uit") # 14
 
@@ -416,7 +416,7 @@ def nofood():
 def toborder():
     sleep(1)
     print("Hoe ga je naar de grens?")
-    sleep(2)
+    sleep(1)
     print("A. Je lift mee met wat vrienden an de boer waar je verbleef") # 36
     print("B. Je gaat met de trein") # 37
 
@@ -435,9 +435,9 @@ def toborder():
 def atborder():
     sleep(1)
     print("Je komt aan bij de grens van Polen.")
-    sleep(2)
+    sleep(1)
     print("Wat ga je doen?")
-    sleep(2)
+    sleep(1)
     print("A. Je gaat naar Nederland") # 17
     print("B. Je gaat zoeken naar je huisbaas in Polen") # 18
 
@@ -456,9 +456,9 @@ def atborder():
 def outcity():
     sleep(1)
     print("Je besluit om de stad te ontvluchten.")
-    sleep(2)
+    sleep(1)
     print(" Waar ga je heen?")
-    sleep(2)
+    sleep(1)
     print("A. Je gaat naar het platteland, waar je een familie op een boederij vindt die je wilt opnemen") # 15
     print("B. Je gaat naar de Poolse grens") # 16
 
@@ -472,6 +472,28 @@ def outcity():
         print("Dit is geen optie, probeer het opnieuw. ")
         outcity()
 
+# again after ending
+def opnieuw():
+    sleep(2)
+    print("Je hebt een einde gevonden.")
+    sleep(1)
+    print("Wilt u het verhaal opnieuw spelen?")
+    
+    print("A. Speel de applicatie opnieuw")
+    print("B. Speel het verhaal opnieuw")
+    print("C. Verlaat de applicatie")
+    antwoord = input("A, B of C ").lower()
+
+    if antwoord == "a":
+        intro()
+    elif antwoord == "b":
+        start()
+    elif antwoord == "c":
+        print("Bedankt voor het spelen! Tot ziens! :D ")
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        opnieuw()   
+
 # def ending 1
 def ending1():
     sleep(3)
@@ -480,13 +502,8 @@ def ending1():
     print("Je gaat opzoek naar een baan en probeert daarnaast zelf door te studeren. ")
     sleep(4)
     print("Het enige wat je kan doen is wachten tot de oorlog voorbij is.")
-    
     sleep(3)
-    print("Je hebt een einde gevonden ")
-    sleep(2)
-    print("Om opnieuw te spelen herstart het programma")
-    sleep(2)
-    print("Bedankt voor het spelen! Tot ziens! :D ")
+    opnieuw()
 
 # def ending 2
 def ending2():
@@ -498,11 +515,7 @@ def ending2():
     print("Ook hebben ze werk waar jij ook een baantje krijgt. ")
     
     sleep(3)
-    print("Je hebt een einde gevonden ")
-    sleep(2)
-    print("Om opnieuw te spelen herstart het programma")
-    sleep(2)
-    print("Bedankt voor het spelen! Tot ziens! :D ")
+    opnieuw()
 
 # def ending 3
 def ending3():
@@ -516,11 +529,7 @@ def ending3():
     print("Het enige wat je nu kan doen is wachten op je vergunning of tot de oorlog voorbij is.")
     
     sleep(3)
-    print("Je hebt een einde gevonden ")
-    sleep(2)
-    print("Om opnieuw te spelen herstart het programma")
-    sleep(2)
-    print("Bedankt voor het spelen! Tot ziens! :D ")
+    opnieuw()
 
 # def ending 4
 def ending4():
@@ -532,11 +541,7 @@ def ending4():
     print("Je wacht tot de oorlog voorbij is en de Russen weg zijn uit je stad.")
     
     sleep(3)
-    print("Je hebt een einde gevonden ")
-    sleep(2)
-    print("Om opnieuw te spelen herstart het programma")
-    sleep(2)
-    print("Bedankt voor het spelen! Tot ziens! :D ")
+    opnieuw()
 
 # def ending 5
 def ending5():
@@ -552,11 +557,7 @@ def ending5():
     print("Je wacht tot de oorlog voorbij gaat en de stad wordt bevrijdt. ")
 
     sleep(3)
-    print("Je hebt een einde gevonden ")
-    sleep(2)
-    print("Om opnieuw te spelen herstart het programma")
-    sleep(2)
-    print("Bedankt voor het spelen! Tot ziens! :D ")
+    opnieuw()
 
 # def ending 6
 def ending6():
@@ -567,12 +568,7 @@ def ending6():
     sleep(4)
     print("Je overlijdt aan je verwondingen op straat.")
 
-    sleep(3)
-    print("Je hebt een einde gevonden ")
-    sleep(2)
-    print("Om opnieuw te spelen herstart het programma")
-    sleep(2)
-    print("Bedankt voor het spelen! Tot ziens! :D ")
+    opnieuw()
 
 
 # BEGIN APPLICATIE
