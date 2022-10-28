@@ -54,6 +54,7 @@ def start():
     sleep(3)
     room()
 
+
 # (28, 30, 33, 34b, 45)[Stukje 1]
 def room():
     sleep(1)    
@@ -472,15 +473,16 @@ def outcity():
         print("Dit is geen optie, probeer het opnieuw. ")
         outcity()
 
+    
 # again after ending
 def opnieuw():
     sleep(2)
     print("Je hebt een einde gevonden.")
     sleep(1)
-    print("Wilt u het verhaal opnieuw spelen?")
-    
-    print("A. Speel de applicatie opnieuw")
-    print("B. Speel het verhaal opnieuw")
+    print("Wilt u het opnieuw proberen?")
+        
+    print("A. Start de applicatie opnieuw")
+    print("B. Start het verhaal opnieuw")
     print("C. Verlaat de applicatie")
     antwoord = input("A, B of C ").lower()
 
@@ -492,7 +494,8 @@ def opnieuw():
         print("Bedankt voor het spelen! Tot ziens! :D ")
     else:
         print("Dit is geen optie, probeer het opnieuw. ")
-        opnieuw()   
+        opnieuw() 
+  
 
 # def ending 1
 def ending1():
@@ -502,7 +505,7 @@ def ending1():
     print("Je gaat opzoek naar een baan en probeert daarnaast zelf door te studeren. ")
     sleep(4)
     print("Het enige wat je kan doen is wachten tot de oorlog voorbij is.")
-    sleep(3)
+    
     opnieuw()
 
 # def ending 2
