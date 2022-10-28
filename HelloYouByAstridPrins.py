@@ -46,10 +46,10 @@ def start():
     sleep(3)
     print("Wees voorzichtig en God bless you all")
     sleep(3)
-    s1a()
+    room()
 
 # (28, 30, 33, 34b, 45)[Stukje 1]
-def s1a():
+def room():
     sleep(1)    
     print("Je kijkt je kamer rondt en denkt na over je volgende plan. Wat doe je?")
     sleep(2)
@@ -59,12 +59,12 @@ def s1a():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s14()
+        pack()
     elif answer == "b":
-        s15()
+        outsidedoor()
 
 # (25)[Stukje 15]
-def s15():
+def outsidedoor():
     sleep(1)
     print("Je komt de deur uit. Welke kant ga je op?")
     sleep(2)
@@ -74,13 +74,13 @@ def s15():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s16()
+        running()
     elif answer == "b":
-        s17()
+        bombshelter()
 
 
 # (26) [Stukje 16]
-def s16():
+def running():
     sleep(1)
     print("Tijdens het rennen raak je moe en begin je met lopen." )
     sleep(2)
@@ -94,12 +94,12 @@ def s16():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s1a()
+        room()
     elif answer == "b":
-        s20()
+        tv()
 
 # (27)[Stukje 17]
-def s17():
+def bombshelter():
     sleep(1)
     print("Je komt aan bij de schuilkelder en je komt tot rust. ")
     sleep(2)
@@ -111,22 +111,22 @@ def s17():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s1a()
+        room()
     elif answer == "b":
-        s19()
+        staybombshelter()
 
 
 # (34a)[Stukje 18]
-def s18():
+def noticket():
     sleep(1)
     print("Je komt aan bij het treinstation, maar je hebt geen geld voor een kaartje. ")
     sleep(2)
     print("Je besluit weer terug te gaan naar je kamer ") # 34b
     
-    s1a()
+    room()
 
 # (31)[Stukje 19]
-def s19():
+def staybombshelter():
     sleep(1)
     print("Je besluit te blijven.")
     sleep(2)
@@ -144,11 +144,11 @@ def s19():
     if answer == "a":
         ending1()
     elif answer == "b":
-        s1a()
+        room()
 
 
 # (29)[Stukje 20]
-def s20():
+def tv():
     sleep(1)
     print("Je komt langs een winkel met tv's in het raam die het nieuws afspelen.")
     sleep(2)
@@ -164,13 +164,13 @@ def s20():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s18()
+        noticket()
     elif answer == "b":
-        s1a()
+        room()
 
 
 # (24)[Stukje 14]
-def s14():
+def pack():
     sleep(1)
     print("Je begint met het pakken van je spullen.")
     sleep(2)
@@ -182,13 +182,13 @@ def s14():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s2a()
+        essential()
     elif answer == "b":
-        s3a()
+        emotional()
 
 
 # (1)[Stukje 2]
-def s2a():
+def essential():
     sleep(1)
     print("Uit welke tas met spullen kies je? ")
     sleep(2)
@@ -198,12 +198,12 @@ def s2a():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s4()
+        confirmEs()
     elif answer == "b":
-        s3a()
+        emotional()
 
 # (2)[Stukje 3]
-def s3a():
+def emotional():
     sleep(1)
     print("Uit welke tas met spullen kies je?")
     sleep(2)
@@ -213,12 +213,12 @@ def s3a():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s5()
+        confirmEm()
     elif answer == "b":
-        s3a()
+        emotional()
 
 # (3, 4)[Stukje 4]
-def s4():
+def confirmEs():
     sleep(1)
     print("Bevestig je keuze.")
     sleep(2)
@@ -228,12 +228,12 @@ def s4():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s6()
+        where()
     elif answer == "b":
-        s2a()
+        essential()
 
 # (21, 22)[Stukje 5]
-def s5():
+def confirmEm():
     sleep(1)
     print("Bevestig je keuze.")
     sleep(2)
@@ -243,13 +243,13 @@ def s5():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s6()
+        where()
     elif answer == "b":
-        s3a()
+        emotional()
 
 
 # (23)[Stukje 6]
-def s6():
+def where():
     sleep(1)
     print("Tijdens het inpakken komt je huisbaas je kamer binnen.")
     sleep(2)
@@ -263,12 +263,12 @@ def s6():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s7()
+        car()
     elif answer == "b":
-        s8()
+        alone()
 
 # (5)[Stukje 7]
-def s7():
+def car():
     sleep(1)
     print("Het is druk op de weg, massa's mensen verplaatsen zich.")
     sleep(2)
@@ -284,11 +284,11 @@ def s7():
     if answer == "a":
         ending1()
     elif answer == "b":
-        s9()
+        nl()
 
 
 # (6)[Stukje 8]
-def s8():
+def alone():
     sleep(1)
     print("Je hebt besloten om alleen te gaan.")
     sleep(2)
@@ -300,12 +300,12 @@ def s8():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s10()
+        farm()
     elif answer == "b":
-        s11()
+        nofood()
 
 # (10)[Stukje 9]
-def s9():
+def nl():
     sleep(1)
     print("Je bereikt Nederland met je buren, je kan twee dingen doen.")
     sleep(2)
@@ -321,7 +321,7 @@ def s9():
 
 
 # (7)[Stukje 10]
-def s10():
+def farm():
     sleep(1)
     print("Je bent op de boerderij aangekomen en er is wat tijd voorbij gegaan. ")
     sleep(2)
@@ -335,11 +335,11 @@ def s10():
     if answer == "a":
         ending4()
     elif answer == "b":
-        s20()
+        toborder()
 
 
 # (8)[Stukje 11]
-def s11():
+def nofood():
     sleep(1)
     print("Je verblijft een tijdje in de schuilkelder, maar uiteindelijk raakt je eten op en de Russen komen dichterbij de stad.")
     sleep(2)
@@ -353,11 +353,11 @@ def s11():
     if answer == "a":
         ending5()
     elif answer == "b":
-        s13()
+        outcity()
 
 
 # (20)[Stukje 21]
-def s21():
+def toborder():
     sleep(1)
     print("Hoe ga je naar de grens?")
     sleep(2)
@@ -367,13 +367,13 @@ def s21():
     answer = input("A of B ").lower()
 
     if answer == "a":
-        s12()
+        atborder()
     elif answer == "b":
-        s12()
+        atborder()
 
 
 # (16, 36, 37)[Stukje 12]
-def s12():
+def atborder():
     sleep(1)
     print("Je komt aan bij de grens van Polen.")
     sleep(2)
@@ -391,7 +391,7 @@ def s12():
 
 
 # (14)[Stukje 13]
-def s13():
+def outcity():
     sleep(1)
     print("Je besluit om de stad te ontvluchten.")
     sleep(2)
@@ -405,7 +405,7 @@ def s13():
     if answer == "a":
         ending4()
     elif answer == "b":
-        s12()
+        atborder()
 
 # def ending 1
 def ending1():
