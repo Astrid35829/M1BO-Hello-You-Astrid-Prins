@@ -16,17 +16,23 @@ def intro():
     volgverhaal = input("Voer in j of n ").lower()
 
     #continue
-    if volgverhaal == "j" or volgverhaal == "ja":
+    if volgverhaal == "j" or volgverhaal == "ja" or volgverhaal == "y" or volgverhaal == "yes":
         sleep(1)
         print("Hier volgt her verhaal")
-    elif volgverhaal == "n" or volgverhaal == "nee":
+    elif volgverhaal == "n" or volgverhaal == "nee" or volgverhaal == "no":
         sleep(1)
         print("Bedankt voor uw aandacht, tot ziens!")
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        intro()
     
     # Begin verhaal
-    if volgverhaal == "j" or volgverhaal == "ja":
+    if volgverhaal == "j" or volgverhaal == "ja" or volgverhaal == "y" or volgverhaal == "yes":
         start()
         
+
+
+
 # def Start
 def start():
     sleep(1)
@@ -62,6 +68,9 @@ def room():
         pack()
     elif answer == "b":
         outsidedoor()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        room()
 
 # (25)[Stukje 15]
 def outsidedoor():
@@ -77,6 +86,9 @@ def outsidedoor():
         running()
     elif answer == "b":
         bombshelter()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        outsidedoor()
 
 
 # (26) [Stukje 16]
@@ -97,6 +109,9 @@ def running():
         room()
     elif answer == "b":
         tv()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        running()
 
 # (27)[Stukje 17]
 def bombshelter():
@@ -114,6 +129,9 @@ def bombshelter():
         room()
     elif answer == "b":
         staybombshelter()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        bombshelter()
 
 
 # (34a)[Stukje 18]
@@ -145,6 +163,9 @@ def staybombshelter():
         ending1()
     elif answer == "b":
         room()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        staybombshelter()
 
 
 # (29)[Stukje 20]
@@ -167,6 +188,9 @@ def tv():
         noticket()
     elif answer == "b":
         room()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        tv()
 
 
 # (24)[Stukje 14]
@@ -185,7 +209,9 @@ def pack():
         essential()
     elif answer == "b":
         emotional()
-
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        pack()
 
 # (1)[Stukje 2]
 def essential():
@@ -200,7 +226,10 @@ def essential():
     if answer == "a":
         confirmEs()
     elif answer == "b":
-        emotional()
+        confirmEs()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        essential()
 
 # (2)[Stukje 3]
 def emotional():
@@ -215,6 +244,9 @@ def emotional():
     if answer == "a":
         confirmEm()
     elif answer == "b":
+        confirmEm()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
         emotional()
 
 # (3, 4)[Stukje 4]
@@ -231,6 +263,9 @@ def confirmEs():
         where()
     elif answer == "b":
         essential()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        confirmEs()
 
 # (21, 22)[Stukje 5]
 def confirmEm():
@@ -246,6 +281,9 @@ def confirmEm():
         where()
     elif answer == "b":
         emotional()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        confirmEm()
 
 
 # (23)[Stukje 6]
@@ -266,6 +304,9 @@ def where():
         car()
     elif answer == "b":
         alone()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        where()
 
 # (5)[Stukje 7]
 def car():
@@ -285,6 +326,9 @@ def car():
         ending1()
     elif answer == "b":
         nl()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        car()
 
 
 # (6)[Stukje 8]
@@ -303,6 +347,9 @@ def alone():
         farm()
     elif answer == "b":
         nofood()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        alone()
 
 # (10)[Stukje 9]
 def nl():
@@ -318,6 +365,9 @@ def nl():
         ending2()
     elif answer == "b":
         ending3()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        nl()
 
 
 # (7)[Stukje 10]
@@ -336,6 +386,9 @@ def farm():
         ending4()
     elif answer == "b":
         toborder()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        farm()
 
 
 # (8)[Stukje 11]
@@ -354,6 +407,9 @@ def nofood():
         ending5()
     elif answer == "b":
         outcity()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        nofood()
 
 
 # (20)[Stukje 21]
@@ -370,6 +426,9 @@ def toborder():
         atborder()
     elif answer == "b":
         atborder()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        toborder()
 
 
 # (16, 36, 37)[Stukje 12]
@@ -388,6 +447,9 @@ def atborder():
         ending3()
     elif answer == "b":
         ending1()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        atborder()
 
 
 # (14)[Stukje 13]
@@ -406,6 +468,9 @@ def outcity():
         ending4()
     elif answer == "b":
         atborder()
+    else:
+        print("Dit is geen optie, probeer het opnieuw. ")
+        outcity()
 
 # def ending 1
 def ending1():
