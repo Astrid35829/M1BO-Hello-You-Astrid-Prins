@@ -1,18 +1,19 @@
+
 from time import sleep
 
 # def intro
 def intro():
     sleep(1)
     print("Welkom bij de Module 1 opdracht Hello You van de opleiding Software Developer aan het Mediacollege Amsterdam.")
-    sleep(3)
+    sleep(2)
     print("De opdracht was om een textbased applicatie te maken met de programmeertaal Python.")
-    sleep(3)
+    sleep(2)
     print("Dit moest doormiddel van een zelfverzonnen verhaal of een verhaal gebaseerd op waargebeurde verhalen.")
-    sleep(3)
+    sleep(2)
     print("Voor deze opdracht is er in deze applicatie een verhaal gemaakt die gebaseerd is op ervaringen van vluchtelingen uit Oekraïne.")
-    sleep(3)
+    sleep(2)
     print("Wilt u het verhaal volgen?")
-    sleep(3)
+    sleep(2)
     volgverhaal = input("Voer in j of n ").lower()
 
     #continue
@@ -34,21 +35,21 @@ def intro():
 def start():
     sleep(1)
     print("Je bent een student aan de Universiteit van Charkov in Oekraïne waar je Computer Science studeert. ")
-    sleep(3)
+    sleep(2)
     print("Je woont bij een oudere vrouw in huis waar je een hechte band mee hebt geschept.")
-    sleep(3)
+    sleep(2)
     print("Eerder in de week was op het nieuws al te horen dat de Russen Oekraïne waren binnen gevallen, je besloot om in de stad te blijven tot het niet meer kon. ")
-    sleep(4)
+    sleep(3)
     print("Tijdens het studeren achter je computer in je kamer gaan het luchtalarm af en de radio switcht naar het noodbericht: ")
-    sleep(3)
+    sleep(2)
     print("Rusland heeft de aanval gericht op Charkov. De troepen zijn een paar dagen verwijdert van de stad.")
-    sleep(3)
+    sleep(2)
     print("Ga naar de schuilkelder of pak een van de laatste kansen om te vluchten. ")
-    sleep(4)
+    sleep(3)
     print("Moldavië, Hongarije, Roemenië en Polen hebben hun grenzen open gezet voor vluchtelingen. ")
-    sleep(3)
+    sleep(2)
     print("Wees voorzichtig en God bless you all")
-    sleep(3)
+    sleep(2)
     room()
 
 # (28, 30, 33, 34b, 45)[Stukje 1]
@@ -115,7 +116,6 @@ def bombshelter():
     print("Je komt aan bij de schuilkelder en je komt tot rust. ")
     sleep(1)
     print("Je maakt een beslissing ")
-    sleep()
     print("A. Je gaat terug naar je kamer ") # 30
     print("B. Je blijft in de schuilkelder ") # 31
 
@@ -482,76 +482,76 @@ def opnieuw():
   
 # def ending 1
 def ending1():
-    sleep(3)
+    sleep(2)
     print("Je gaat met huisbaas mee naar haar familie, ze hebben een kamer voor je vrij. ")
-    sleep(4)
+    sleep(3)
     print("Je gaat opzoek naar een baan en probeert daarnaast zelf door te studeren. ")
-    sleep(4)
+    sleep(3)
     print("Het enige wat je kan doen is wachten tot de oorlog voorbij is.")
     
     opnieuw()
 
 # def ending 2
 def ending2():
-    sleep(3)
+    sleep(2)
     print("Je besluit om bij de buren te blijven, je krijgt een vluchtelingen verblijfsvergunning.")
-    sleep(4)
+    sleep(3)
     print("De buren hebben een huis kunnen regelen waar jij ook een verblijfplaats krijgt.")
-    sleep(4)
+    sleep(3)
     print("Ook hebben ze werk gevonden waar jij ook een baantje krijgt. ")
     
-    sleep(3)
+    sleep(2)
     opnieuw()
 
 # def ending 3
 def ending3():
-    sleep(3)
+    sleep(2)
     print("Je belandt op het vluchtelingen cruiseschip in Zaandam. ")
-    sleep(4)
+    sleep(3)
     print("Je moet wachten tot je een verblijfsvergunning krijgt. ")
-    sleep(4)
+    sleep(3)
     print("Tijdens het wachten probeer je mensen om je heen te helpen en je onderzoekt de omgeving van het nieuwe land waar je bent. ")
-    sleep(4)
+    sleep(3)
     print("Het enige wat je nu kan doen is wachten op je vergunning of tot de oorlog voorbij is.")
     
-    sleep(3)
+    sleep(2)
     opnieuw()
 
 # def ending 4
 def ending4():
-    sleep(3)
+    sleep(2)
     print("Je blijft op de boerderij, je werkt daar voor onderdak en eten.")
     sleep(3)
     print("Ook probeer je zelf je studie bij te houden. ")
     sleep(3)
     print("Je wacht tot de oorlog voorbij gaat en de Russen weg zijn uit je stad.")
     
-    sleep(3)
+    sleep(2)
     opnieuw()
 
 # def ending 5
 def ending5():
-    sleep(3)
+    sleep(2)
     print("Je besluit om in de schuilkelder te blijven tot het Russisch leger de stad heeft overgenomen en de bommen stoppen met vallen.")
-    sleep(4)
+    sleep(3)
     print("Je gaat weer terug naar je kamer die nog steeds staat.")
-    sleep(4)
+    sleep(3)
     print("Je zoekt naar werk. ")
-    sleep(4)
+    sleep(3)
     print("Leven gaat weer door maar met een Russische schaduw erover. ")
-    sleep(4)
+    sleep(3)
     print("Je wacht tot de oorlog voorbij gaat en de stad wordt bevrijdt. ")
 
-    sleep(3)
+    sleep(2)
     opnieuw()
 
 # def ending 6
 def ending6():
-    sleep(3)
+    sleep(2)
     print("Je gaat naar buiten en loopt richting je kamer.")
-    sleep(4)
+    sleep(3)
     print("Halverwege ontploft er een raket in het gebouw waar je naast loopt.")
-    sleep(4)
+    sleep(3)
     print("Je overlijdt aan je verwondingen op straat.")
 
     opnieuw()
@@ -560,3 +560,8 @@ def ending6():
 
 # Introduction
 intro()
+
+
+
+
+
